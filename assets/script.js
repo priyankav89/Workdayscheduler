@@ -4,17 +4,19 @@ var today = dayjs();
 $('#currentDay').text(today.format('MMM D, YYYY'));
 
 //get current time and display on the screen
-var currentTime = dayjs();
-$('#currentTime').text(currentTime.format('hh:mm'));
+var currentTime = moment();
+$('#currentTime').text(currentTime.format('LTS'));
 
 //set colors according to time(past,present,future)
 function setHourColors() {
     $('.time-block').each(function () {
-        var now = parseInt($(this).attr('id').split("hour")[1]);
-        if (now < currentTime) {
+        var now = parseInt($(this).attr("id"));
+        if ( now<currentTime) {
             $(this).addClass('past');
+            $(this).removeClass('present');
+            $(this).removeClass('future');
         }
-        else if (now === currentTime) {
+        else if (now === currentTime)  {
             $(this).addClass('present');
             $(this).removeClass('past');
             $(this).removeClass('future');
@@ -22,7 +24,7 @@ function setHourColors() {
         else {
 
             $(this).addClass('future');
-            $(this).removeClass('past');
+           $(this).removeClass('past');
             $(this).removeClass('present');
 
         }
@@ -76,5 +78,5 @@ $(function () {
     setHourColors();
     loadStoredData();
 });
-//when button is clicked activate handleSaveClick function to save the agendqa and store in local storage 
+//when button is clicked activate handleSaveClick function to save the agenda and store in local storage 
 $('.saveBtn').on('click', handleSaveClick);
