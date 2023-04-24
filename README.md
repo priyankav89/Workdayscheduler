@@ -1,12 +1,14 @@
 # Workday-scheduler
 
 #Description
+
 To build a work-day scheduler  to add important events to a daily planner to manage time effectively
 
 #Deployed link
 
 
 #Usage
+
 WHEN you open the planner, THEN the current day is displayed at the top of the calendar.
 
 WHEN you scroll down,THEN you are presented with time blocks for standard business hours.
@@ -20,4 +22,5 @@ WHEN you click the save button for that time block, THEN the text for that event
 WHEN you refresh the page,THEN the saved events persist.
 
 #license
+
 MIA
