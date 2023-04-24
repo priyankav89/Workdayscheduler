@@ -9,14 +9,15 @@ $('#currentTime').text(currentTime.format('LTS'));
 
 //set colors according to time(past,present,future)
 function setHourColors() {
+    var currentT=moment().hours();
     $('.time-block').each(function () {
-        var now = parseInt($(this).attr("id"));
-        if ( now<currentTime) {
+        var now = parseInt($(this).attr("id").split("-")[1]);
+        if ( now<currentT) {
             $(this).addClass('past');
             $(this).removeClass('present');
             $(this).removeClass('future');
         }
-        else if (now === currentTime)  {
+        else if (now === currentT)  {
             $(this).addClass('present');
             $(this).removeClass('past');
             $(this).removeClass('future');
