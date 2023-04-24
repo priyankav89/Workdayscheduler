@@ -73,19 +73,6 @@ function handleSaveClick(event) {
     //store in local storage
     localStorage.setItem("calendarEvents", JSON.stringify(eventsData));
 };
-// // generate events function
-// function generateEvents(event) {
-//     for (var i = 9; i < 18; i++) {
-//         var textblock = $('hour' + i);
-//         console.log(event["hour"+i]);
-//         textblock.text(event["hour" + i]);
-//     }
-//     //     var eventKeys= Object.keys(events);
-//     //     for(var i=0;i <eventKeys.length;i++){
-//     //   var eventKey= eventKeys[i];
-//     //   var timeBlockEl =$('#hour-'+(i+9)).children("textarea").val(events[eventKeys]);
-//     //     }
-// }
 
 $(function () {
     setHourColors();

@@ -6,7 +6,7 @@ body {
   
   textarea {
     background: transparent;
-    border: none;
+    border:none;
     resize: none;
     color: #000000;
     border-left: 1px solid black;
@@ -28,6 +28,7 @@ body {
   .time-block {
     text-align: center;
     border-radius: 15px;
+  
   }
   
   .row {
@@ -56,7 +57,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+ 
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
