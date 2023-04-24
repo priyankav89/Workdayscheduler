@@ -6,6 +6,7 @@ To build a work-day scheduler  to add important events to a daily planner to man
 
 #DEPLOYED WEBSITE
 
+[Website](https://priyankav89.github.io/Workdayscheduler/)
 
 #USAGE
 
@@ -21,6 +22,10 @@ WHEN you click the save button for that time block, THEN the text for that event
 
 WHEN you refresh the page,THEN the saved events persist.
 
+Screenshots
+
+![Screenshot](./assets/images/homepage.png)
+![Screenshot](./assets/images/meeting.png)
 #LICENSE
 
 MIA
