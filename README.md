@@ -4,7 +4,7 @@
 
 To build a work-day scheduler  to add important events to a daily planner to manage time effectively
 
-#DEPLOYED-LINK
+#DEPLOYED WEBSITE
 
 
 #USAGE
