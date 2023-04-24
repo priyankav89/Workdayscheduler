@@ -25,7 +25,7 @@ WHEN you refresh the page,THEN the saved events persist.
 
 Screenshots
 ![Screenshot](./assets/images/first.png)
-
+![Screenshot](./assets/images/second.png)
 #LICENSE
 
 MIA
