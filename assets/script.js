@@ -41,10 +41,8 @@ function generateEvents(events) {
 
 //load existing data from local storage
 function loadStoredData() {
-    savedData = JSON.parse(localStorage.getItem("calendarEvents"));
-    if (savedData !== null) {
-        eventsData = savedData;
-    } else {
+    eventsData = JSON.parse(localStorage.getItem("calendarEvents"));
+  if (!eventsData){
         eventsData = {
             hour9: "",
             hour10: "",
